@@ -47,3 +47,5 @@ next-env.d.ts
 
 # agent
 .claude
+
+pnpm-lock.yaml
