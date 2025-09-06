@@ -18,6 +18,7 @@ export default function DashboardPage() {
             <div className="w-full h-full flex justify-center items-center">
                 仪表盘
             </div>
+
             <Link className="text-sky-300" href="/">点击跳转主页</Link>
         </>
     )
