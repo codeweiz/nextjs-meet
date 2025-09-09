@@ -1,6 +1,6 @@
-import type {PropsWithChildren} from "react";
+import type { PropsWithChildren } from "react";
 import "./globals.css";
 
-export default function RootLayout({children}: PropsWithChildren) {
-    return children;
+export default function RootLayout({ children }: PropsWithChildren) {
+  return children;
 }
