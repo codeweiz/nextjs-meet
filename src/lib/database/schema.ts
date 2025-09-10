@@ -1,4 +1,4 @@
-import {integer, sqliteTable, text, uniqueIndex, sql} from "drizzle-orm/sqlite-core";
+import {integer, sqliteTable, text, uniqueIndex} from "drizzle-orm/sqlite-core";
 
 // 带 ID
 const withId = () => ({
@@ -8,13 +8,13 @@ const withId = () => ({
 // 带审计属性
 const withAudit = () => ({
     // 创建时间
-    createdAt: integer("created_at", {mode: "timestamp"}).notNull().default(sql`CURRENT_TIMESTAMP`),
+    createdAt: integer("created_at", {mode: "timestamp"}).notNull().default(new Date()),
 
     // 创建人
     createdBy: text("created_by", {length: 255}),
 
     // 更新时间
-    updatedAt: integer("updated_at", {mode: "timestamp"}).notNull().default(sql`CURRENT_TIMESTAMP`),
+    updatedAt: integer("updated_at", {mode: "timestamp"}).notNull().default(new Date()),
 
     // 更新人
     updatedBy: text("updated_by", {length: 255}),
