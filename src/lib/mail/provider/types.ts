@@ -49,6 +49,7 @@ export interface SendParams {
     html?: string;
 }
 
+
 /**
  * 国际化邮件组件的 Props 接口
  * 包含语言设置和翻译消息
